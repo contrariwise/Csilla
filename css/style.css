@@ -14,8 +14,10 @@ html, body {
     display:block;position:absolute;z-index:1;
     min-width:100%;
     min-height:100%;
-    background:transparent url('../img/38.jpg') center center no-repeat;
-    background-size:cover;
+    background-image: url("../img/38.jpg");
+    //background:transparent url('../img/38.jpg') center center no-repeat;
+    //background-size:cover;
+    background-attachment: fixed;
 }
 .content {
     display:block;position:relative;z-index:2;
@@ -276,7 +278,8 @@ blockquote p:before{
 
 #slide1{
 	background-color:#ffffff;
-	background:transparent url('../img/white_wall.png') center center repeat;
+	background-image: url("../img/white_wall.png");
+	//background:transparent url('../img/white_wall.png') center center repeat;
 	text-align: left;
 	color: #787570;
 }
@@ -365,7 +368,7 @@ blockquote p:before{
 
 #slide3{
 	background-color:#ffffff;
-	background:transparent url('../img/gray_jean.png') center center repeat;
+	background-image: url("../img/gray_jean.png");
 	color:#555555;
 }
 #slide3 h1 {
