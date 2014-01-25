@@ -1,55 +1,45 @@
 jQuery(document).ready(function ($) {
 
+	/*
+	 * Animated scroll
+	 */
+    $(".navbar a[href^='#']").on('click', function(e) {
 
-    $(window).stellar();
+       // prevent default anchor click behavior
+       e.preventDefault();
 
-    var links = $('.navigation').find('li');
-    slide = $('.slide');
-    button = $('.button');
-    mywindow = $(window);
-    htmlbody = $('html,body');
-
-
-    slide.waypoint(function (event, direction) {
-
-        dataslide = $(this).attr('data-slide');
-
-        if (direction === 'down') {
-            $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').prev().removeClass('active');
-        }
-        else {
-            $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').next().removeClass('active');
-        }
-
-    });
- 
-    mywindow.scroll(function () {
-        if (mywindow.scrollTop() == 0) {
-            $('.navigation li[data-slide="1"]').addClass('active');
-            $('.navigation li[data-slide="2"]').removeClass('active');
-        }
-    });
-
-    function goToByScroll(dataslide) {
-        htmlbody.animate({
-            scrollTop: $('.slide[data-slide="' + dataslide + '"]').offset().top
-        }, 2000, 'easeInOutQuint');
-    }
-
-
-
-    links.click(function (e) {
-        e.preventDefault();
-        dataslide = $(this).attr('data-slide');
-        goToByScroll(dataslide);
-    });
-
-    button.click(function (e) {
-        e.preventDefault();
-        dataslide = $(this).attr('data-slide');
-        goToByScroll(dataslide);
+       // animate
+       $('html, body').animate({
+           scrollTop: $(this.hash).offset().top  /*- $(window).scrollTop()*/
+		}, 400, function(){
+   
+           // when done, add hash to url
+           // (default click behaviour)
+         /*  var scrollTop = $(window).scrollTop();
+           var place = $(".active a").attr('href');
+           if (scrollTop < 10) {
+           		place = '';
+           }
+           
+           	window.location.hash = place; */
+           
+           		
+           
+         });
 
     });
-
-
+    
+    
+    /*
+     * Portfolio
+     */
+	$('.thumbnail').magnificPopup({ 
+	  type: 'image',
+	  mainClass: 'mfp-zoom-out', // this class is for CSS animation below
+	
+	   // Delay in milliseconds before popup is removed
+	  removalDelay: 500
+	
+	});
+	
 });

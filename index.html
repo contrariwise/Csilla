@@ -6,42 +6,49 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
-	<title>Csillas Mockup</title>
+	<meta name="description" content="Webbsida mockup för Tusen och en natt massage. Gjord av Midnight Oil Labs, webbyrå i Växjö.">
+	<meta name="author" content="Midnight Oil Labs, webbyrå i Växjö">
+	<title>Tusen och en natt massage</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
-	<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 	<!-- <link rel="stylesheet" href="css/style.min.css" type="text/css" media="screen"> -->
 	<!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:300,400' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Niconne' rel='stylesheet' type='text/css'>
-
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" media="screen"> 
 </head>
 
-<body>
-
-	<div class="menu">
-		<div class="container clearfix">
-
-			<div id="logo" class="grid_3">
-				<img src="img/toen.png" >
-			</div>
-
-			<div id="nav" class="grid_9 omega">
-				<ul class="navigation">
-					<li data-slide="1">Massage</li>
-					<li data-slide="2">Galleri</li>
-					<li data-slide="3">Presentkort</li>
-					<li data-slide="4">Pris</li>
-					<li data-slide="5">Om oss</li>
-				</ul>
-			</div>
-
-		</div>
-	</div>
+<body data-spy="scroll" data-target=".navbar">
 	
-<div class="fullscreen-cont">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#top"><img src="img/toen.png" ></a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="#slide1">Massage</a></li>
+      <li><a href="#slide2">Galleri</a></li>
+	  <li><a href="#slide3">Presentkort</a></li>
+	  <li><a href="#slide4">Pris</a></li>
+	  <li><a href="#slide5">Om oss</a></li>
+    </ul>
+
+ 
+  </div><!-- /.navbar-collapse -->
+</nav>
+
+<div class="fullscreen-cont" id="top">
 	<ul id="headline">
 	  <li>Ingen mer smärta</li>
 	  <li>Ingen mer stress</li>
@@ -55,10 +62,11 @@
 
 
 	<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
-		<div class="container clearfix">
+		<div class="container">
 			<h1>Varför Massage?</h1>
-			<div id="content" class="grid_5">
+			<div class="row">
 				
+				<div class="col-md-5">
 				<h2>Massage lindrar</h2>
 				<ul class="fa-ul">
 				  <li><i class="fa-li fa fa-chevron-right"></i>Stress och ångerst</li>
@@ -69,10 +77,10 @@
 				  <li><i class="fa-li fa fa-chevron-right"></i>Idrottskada</li>
 				  <li><i class="fa-li fa fa-chevron-right"></i>Fibromyalgi</li>
 				</ul>
-				
+			</div>	
 
-			</div>
-			<div class="grid_6">
+			
+			<div class="col-md-6">
 				<blockquote>
 				<p>Massage påverkar positivt varje sjukdom vi undersökte. Forskare upptäcker
 				nu att massage sänker blodtryck, stärker immunsystemet, dämpar 
@@ -85,7 +93,7 @@
 				(Originell citat på engelska)
 				</cite>
 			</div>
-			
+			</div>
 			<a href="#" class="css3-button css3-button_green-g">Boka nu</a>
 
 		</div>
@@ -94,71 +102,62 @@
 
 
 	<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
-		<div class="clearfix">
+		<div class="container">
 
 			
-				<h1>Portfolio</h1>
-				<p>Den ska vara interaktiv (och bytes ut mot dina bilder så klart)</p>
+				<h1>Galleri</h1> 
+				<div class="row">
+				  <div class="col-xs-6 col-md-3">
+				    <a class="thumbnail" href="img/gallery/gallery1.jpg" data-effect="mfp-zoom-out">
+				      <img src="img/gallery/gallery1_thumb.jpg">
+				    </a>
+				  </div>
+				  
+				  <div class="col-xs-6 col-md-3">
+				    <a class="thumbnail" href="img/gallery/gallery2.jpg">
+				      <img src="img/gallery/gallery2_thumb.jpg">
+				    </a>
+				  </div>
+				  
+				  <div class="col-xs-6 col-md-3">
+				    <a class="thumbnail" href="img/gallery/gallery3.jpg">
+				      <img src="img/gallery/gallery3_thumb.jpg">
+				    </a>
+				  </div>
+				  
+				  <div class="col-xs-6 col-md-3">
+				    <a  class="thumbnail" href="img/gallery/gallery4.jpg">
+				      <img src="img/gallery/gallery4_thumb.jpg">
+				    </a>
+				  </div>
+				</div>
 				
-				<ul id="portfolio-items">
-
-				<li class="portfolio-item ">				
-				<img width="500" height="375" src="http://farm9.staticflickr.com/8359/8420234208_3366a66557_n.jpg" />
-				</li>
-				
-				<li class="portfolio-item ">				
-				<img width="500" height="375" src="http://farm9.staticflickr.com/8219/8266886426_1e5fcd0329_n.jpg" />
-				</li>
-				
-				<li class="portfolio-item ">				
-				<img width="500" height="375" src="http://farm7.staticflickr.com/6049/6250538830_78d4ccaa01_n.jpg" />
-				</li>
-				
-				<li class="portfolio-item ">				
-				<img width="500" height="375" src="http://farm8.staticflickr.com/7199/6795229474_fc26ec0bf2_n.jpg" />
-				</li>
-				
-				
-				<li class="portfolio-item ">				
-				<img width="500" height="375" src="http://farm3.staticflickr.com/2567/5697107145_3c27ff3cd1_n.jpg" />
-				</li>
-				
-				<li class="portfolio-item ">				
-				<img width="500" height="375" src="http://farm3.staticflickr.com/2750/4452367725_921d85e6e5.jpg" />
-				</li>
-				
-				<li class="portfolio-item ">				
-				<img width="500" height="375" src="http://farm3.staticflickr.com/2627/4171747002_b7a985220c_n.jpg" />
-				</li>
-				
-				<li class="portfolio-item ">				
-				<img width="500" height="375" src="http://farm3.staticflickr.com/2610/4216356826_53324027a5.jpg" />
-				</li>
-				
-				
-				<li class="portfolio-item ">				
-				<img width="500" height="375" src="http://farm3.staticflickr.com/2546/4002185093_a225c2e92e_n.jpg" />
-				</li>
-				
-				<li class="portfolio-item ">				
-				<img width="500" height="375" src="http://farm4.staticflickr.com/3300/3652077613_6d9d96b1f3_n.jpg" />
-				</li>
-				
-				<li class="portfolio-item ">				
-				<img width="500" height="375" src="http://farm3.staticflickr.com/2610/3822382189_f98aec6feb_n.jpg" />
-				</li>
-				
-				<li class="portfolio-item ">				
-				<img width="500" height="375" src="http://farm4.staticflickr.com/3312/3650717808_46054cc96a.jpg" />
-				</li>								
-				
-				
-				
-				
-				</ul>
-				
+				<div class="row">
+				  <div class="col-xs-6 col-md-3">
+				    <a  class="thumbnail" href="img/gallery/gallery5.jpg">
+				      <img src="img/gallery/gallery5_thumb.jpg">
+				    </a>
+				  </div>
+				  
+				  <div class="col-xs-6 col-md-3">
+				    <a class="thumbnail" href="img/gallery/gallery6.jpg">
+				      <img src="img/gallery/gallery6_thumb.jpg">
+				    </a>
+				  </div>
+				  
+				  <div class="col-xs-6 col-md-3">
+				    <a class="thumbnail" href="img/gallery/gallery7.jpg">
+				      <img src="img/gallery/gallery7_thumb.jpg">
+				    </a>
+				  </div>
+				  
+				  <div class="col-xs-6 col-md-3">
+				    <a  class="thumbnail" href="img/gallery/gallery8.jpg">
+				      <img src="img/gallery/gallery8_thumb.jpg">
+				    </a>
+				  </div>
+				</div>
 			
-
 		</div>
 	</div>
 
@@ -167,135 +166,145 @@
 	<div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 
-			<div id="content" class="grid_12">
+			<div class="grid_12">
 				<h1>Presentkort</h1>
 				<h2>Vänner låter inte vänner har stress eller smärta.</h2>
-				<p>Presentkort information här</p>
+				<p> Ett presentkort som kan användas för massage eller för att njuta vår spa?</p>
 			</div>
 
-		<a href="#" class="css3-button css3-button_green-g">Köp nu</a>
+		<a href="#" class="css3-button css3-button_green-g">Köp nu<span>Det går inte att köpa där denna är en demo sida.</span></a>
 		</div>
 	</div>
 
 
 
 	<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
-		<div class="container clearfix">
+		<div class="container">
 
-			<div id="content" class="grid_12">
 				<h1>Prislista</h1>
 				
-				<div class="clearfix chocolate">
-				<img id="choccie" src="img/chocolate.jpg" height="570px" width="429px"/>
-				<div>
-				<h2>Choklad Plus</h2>
-				<h3 class=""><span>Unnar </span>dig utan kalorierna!</h3>
-				</div>
-				<img id="swish" src="img/swish.jpg" height="36px" width="245px"/>
-				</div>
+				<div class="row">
+					<div class="col-md-5 col-sm-4">
+					<img id="choccie" src="img/chocolate.jpg" height="570" width="429"/>
+					</div>
+					<div class="col-md-7 col-sm-8">
+					<h2>Choklad Plus</h2>
+					<h3><span>Unnar </span>dig utan kalorierna!</h3>
+					<p id="swish_wrap">
+					<img id="swish" src="img/swish.jpg" height="36" width="245"/>
+					</p>
+					</div>
+					</div>
 				
-				<div class="clearfix prices">
+				<div class="row">
+				
+				<div class="col-sm-6 col-md-3">
 				<ul>
-					<li>Helkroppsmassage</li>
+					<li>Helkropp</li>
 					<li>400 kr</li>
 					<li><strong>60</strong> min</li>
-					<li>Beskrivning Beskrivning Beskrivning Beskrivning Beskrivning Beskrivning 
-						Beskrivning Beskrivning Beskrivning Beskrivning Beskrivning</li>
+					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend lorem ut mi laoreet, ac dignissim tellus scelerisque. Mauris sed diam ut massa cursus ullamcorper sed quis dolor. </li>
 				</ul>
+				</div>
 				
+				<div class="col-sm-6 col-md-3">
 				<ul>
 					<li>Ryggmassage</li>
 					<li>133 kr</li>
 					<li><strong>20</strong> min</li>
-					<li>Beskrivning Beskrivning Beskrivning Beskrivning Beskrivning Beskrivning 
-						Beskrivning Beskrivning Beskrivning Beskrivning Beskrivning </li>
+					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend lorem ut mi laoreet, ac dignissim tellus scelerisque. Mauris sed diam ut massa cursus ullamcorper sed quis dolor. </li>
 				</ul>
+				</div>
 				
+				<div class="col-sm-6 col-md-3">
 				<ul>
 					<li>Ryggmassage</li>
 					<li>240 kr</li>
 					<li><strong>40</strong> min</li>
-					<li>Beskrivning Beskrivning Beskrivning Beskrivning Beskrivning Beskrivning 
-						Beskrivning Beskrivning Beskrivning Beskrivning Beskrivning </li>
+					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend lorem ut mi laoreet, ac dignissim tellus scelerisque. Mauris sed diam ut massa cursus ullamcorper sed quis dolor. </li>
 				</ul>
+				</div>
 				
+				<div class="col-sm-6 col-md-3">
 				<ul>
 					<li>Kollagenhelkropp</li>
 					<li>480 kr</li>
 					<li><strong>80</strong> min</li>
-					<li>Din hud djuprengörs med speciell mandel-bodyscrub, och efter dusch masseras
-						mjukt genom hela kroppen med hydratiserande, näringsrik kräm som fyller upp din
-						hud och det blir skön och fräsch igen.</li>
+					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend lorem ut mi laoreet, ac dignissim tellus scelerisque. Mauris sed diam ut massa cursus ullamcorper sed quis dolor. </li>
 				</ul>
 				</div>
-				<div class="clearfix prices">
+				
+				</div>
+				
+				<div class="row">
+					
+				<div class="col-sm-6 col-md-3">
 				<ul>
 					<li>Relax massage</li>
 					<li>150 kr</li>
 					<li><strong>20</strong> min</li>
-					<li>Ansikte, huvud, nacken och dekolletagemassage.</li>
+					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend lorem ut mi laoreet, ac dignissim tellus scelerisque. Mauris sed diam ut massa cursus ullamcorper sed quis dolor.</li>
 				</ul>
+				</div>
 				
+				<div class="col-sm-6 col-md-3">
 				<ul>
 					<li>Ben och fötter</li>
 					<li>200 kr</li>
 					<li><strong>30</strong> min</li>
-					<li>Beskrivning Beskrivning Beskrivning Beskrivning Beskrivning Beskrivning 
-						Beskrivning Beskrivning Beskrivning Beskrivning Beskrivning</li>
+					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend lorem ut mi laoreet, ac dignissim tellus scelerisque. Mauris sed diam ut massa cursus ullamcorper sed quis dolor.</li>
 				</ul>
+				</div>
 				
+				<div class="col-sm-6 col-md-3">
 				<ul>
 					<li>Choklad plus</li>
 					<li>530 kr</li>
 					<li><strong>80</strong> min</li>
-					<li>Helkroppsmassage med choklad aromatisk olja. Massagen avslutas med ansiktsbehandling.</li>
+					<li>En avslappnande helkroppsmassage med choklad aromatisk olja eller kräm. Efter den använder vi en speciel choklad gelmask som fyller upp din hud med viktiga vitaminer.</li>
 				</ul>
+				</div>
 				
+				<div class="col-sm-6 col-md-3">
 				<ul>
 					<li>Hot stone</li>
 					<li>250 kr</li>
 					<li><strong>30</strong> min</li>
-					<li>Beskrivning Beskrivning Beskrivning Beskrivning Beskrivning Beskrivning 
-						Beskrivning Beskrivning Beskrivning Beskrivning Beskrivning</li>
+					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend lorem ut mi laoreet, ac dignissim tellus scelerisque. Mauris sed diam ut massa cursus ullamcorper sed quis dolor.</li>
 				</ul>
 				</div>
 				
-				<a href="#" class="css3-button css3-button_green-g">Boka nu</a>
-			</div>
-
+				</div>
+				
+				<a href="#" class="css3-button css3-button_green-g">Boka nu<span>Det går inte att boka där denna är en demo sida.</span></a>
+			
 		</div>
 	</div>
 	
 	<div class="slide" id="slide5" data-slide="5" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 
-			<div id="content" class="grid_12">
+			<div class="grid_12">
 				<h1>Om oss</h1>
 				<p>Vår affärsidé går ut på att erbjuda friskvård till så låga priser att så många som möjligt ska ha råd att kosta på sig det.
 
 Vårt mål är att många fler människor än idag skulle leva ett friskare liv om de vänder sig till massör när de har problem med hälsan såväl fysisk som psykisk.
 
 Vi erbjuder er att byta ut värktabletter samt energigivande medel så som energidrink till en mycket hälsosammare lösning.</p>
-				<h2>Öppettider</h2>
-				<p>Vi har öppet även när hotellet har stängt. Inte alltid såklart, men ett par extra timmar hit och dit kan du räkna med.
-Vi öppnar de flesta dagar vid kl 16:00 eller 18:00, då och då så tidigt som kl. 10:00 men vissa dagar 11:00 eller kl 15:00.
-Vi stänger ungefär kl 20:00 eller 21:00. Ibland vid 18:00 men ibland inte förrän 22:00.
-Vissa dagar eller förmiddagar är vi inte här överhuvudtaget, men på sistone har vi varit här nästan jämt, utom när vi är någon annanstans men vi borde vara här då också!
 
-Vi öppnar när massagen börjar och stänger när det är slut.
-(från tisdag till fredag och
-från lördag till måndag 7:00-21:00)</p>
 				
 			</div>
 
 		</div>
 	</div>
 
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script> 
 	<script type="text/javascript" src="js/waypoints.min.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
-	<!-- <script type="text/javascript" src="js/scripts.min.js"></script> -->
 </body>
 </html>
