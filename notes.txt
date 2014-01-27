@@ -4,10 +4,7 @@
 Zoomerang instead of prettyphoto?
 http://yyx990803.github.io/zoomerang/
 
-
-Booking and contact!
-Ask about Newsletter subscription
-
-
 TODO:
 - FERESHTEH
+- Clean up CSS
+- Put link back to Midnight Oil
